@@ -1,0 +1,15 @@
+# 'This program calculates the perimeter of a triangle'
+side_one = 5
+base = 6
+side_two = 10
+
+perimeter = side_one + base + side_two
+print(perimeter)
+print( 'The perimeter of the triangle is ' , perimeter )
+
+#'This program indicates whether the following statement are correct'
+print(side_one > side_two)
+print ('Is side_one greater than side_two',side_one > side_two )
+
+print(base == side_one)
+print ('Is the base equal to side_one',base == side_one)
