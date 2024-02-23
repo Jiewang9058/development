@@ -71,42 +71,57 @@ celsius = (fahrenheight - 32) * 5/9
 # print(year)
 
 # Subtract 20 -
-num_one = 55
+# num_one = 55
 
-num_one -=20
-print(num_one)
+# num_one -=20
+# print(num_one)
 
 
 # Subtract 15 -
-num_two = 11
+# num_two = 11
 
-num_two -= 15
-print(num_two)
+# num_two -= 15
+# print(num_two)
 
 
 # Multiply by 3 *
 my_value = 9
 
+my_value *= 3
+# print(my_value)
+
 
 # Multiply by 10 *
 mileage = 15
 
+mileage *= 10
+# print(mileage)
+
 
 # Divide by 2 /
 pizza_slices = 8
+pizza_slices /= 2
+# print(pizza_slices)
 
 
 # Divide by 7 /
 fees = 8.90
+fees /= 7
+# print(fees)
 
 
 # Raise to the 3rd power **
 num_three = 6
 
+num_three **= 3
+# print(num_three)
+
 
 
 # Raise to the 2nd power **
 data = 16
+data **= 2
+print(data)
 
 
 # Integer divide by 3 //
