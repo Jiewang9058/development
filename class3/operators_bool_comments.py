@@ -121,25 +121,32 @@ num_three **= 3
 # Raise to the 2nd power **
 data = 16
 data **= 2
-print(data)
+# print(data)
 
 
 # Integer divide by 3 //
 val_one = 16
+val_one //= 3
+# print(val_one)
 
 
 
 # Integer divide by 4 //
 val_two = 9
+val_two //= 4
+# print(val_two)
 
 
 # Find the remainder if divided by 3 %
 val_three = 10
-
+val_three %= 3
+# print(val_three)
 
 
 # Find the remainder if divided by 5 %
 val_four = 14
+val_four %= 5
+# print(val_four)
 
 
 # Refactor the fahrenheit/celsius converter using shortcut operators
@@ -148,46 +155,90 @@ val_four = 14
 # celsius = (fahrenheight - 32) * 5/9
 # print(celsius)
 
+# fahrenheight = 89
+# fahrenheight -= 32
+# fahrenheight *=5/9
+# celsius = fahrenheight
+# print(celsius)
+
 
 ''' Boolean Operators'''
 
 # Is 7 less than 5? <
+# print( 7 < 5 )
+# result = ( 7 < 5 )
+# print (result)
 
 
 # Is 4 less than or equal to 4? <=
+# print (4 <= 4)
+# result = ( 4<= 4)
+# print(result)
 
 
 # Is 6 greater than 2? >
-
+# print (6 > 2)
+# result =(6 > 2)
+# print (result)
 
 # Is 5 greater than or equal to 6? >=
+# print (5 >= 6)
+# result =(5 >= 6)
+# print (result)
 
 
 # Is 5 equal to 5? ==
+# print( 5 == 5 )
+# result =( 5 == 5 )
+# print(result)
+
 
 
 # Is 100 not equal to 75? !=
+# print( 100 != 75)
+# result =( 100 != 75)
+# print(result)
 
 
 # and
-
+print(5 == 5 and 4 ==4) # this is true because both are true
+print(2 == 2 and 3 ==2) # this is false because one is false
+print(1 ==0 and 3 == 5) # this is false because one is false 
 
 # Values from example 1 can be stored in variables
-
+# log_1 = ( 5 == 5)
+# log_2 = (4 ==4)
+# print(log_1 and log_2)
 
 # or
+print (5 == 5 or 5 ==3) # True if at least 1 are true
 
 
 # not
+x = 5
+y = 7 
 
 # Is x less than y?
+print (x < y )
+print (not x < y )
 
 
 # Are we the same object? is 
+# fname = 'Dana'
+# new_name = fname 
+# print (fname is new_name)
+
 
 # in
 
+print( 'M' in 'May')
+print ('D' in 'Dana')
 
 # eval
+is_open = 'True'
+weekday = 'False'
+
+print(eval(is_open))
+print(eval(weekday))
 
 
