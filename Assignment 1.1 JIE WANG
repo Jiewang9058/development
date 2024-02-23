@@ -7,9 +7,17 @@ perimeter = side_one + base + side_two
 print(perimeter)
 print( 'The perimeter of the triangle is ' , perimeter )
 
-#'This program indicates whether the following statement are correct'
-print(side_one > side_two)
-print ('Is side_one greater than side_two',side_one > side_two )
 
+#'Is side_one greater than side_two'?
+print(side_one > side_two) 
+
+result = (side_one > side_two)
+
+print (result)
+
+#'Is the base equal to side_one'?
 print(base == side_one)
-print ('Is the base equal to side_one',base == side_one)
+
+result = (base == side_one)
+
+print (result)
