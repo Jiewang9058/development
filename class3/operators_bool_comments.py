@@ -58,19 +58,30 @@ celsius = (fahrenheight - 32) * 5/9
 '''Shortcut operators'''
 
 # Add 5 to me using shortcut operator +
-age = 25
+# age = 25
+
+# age += 5
+# print(age)
 
 
 # Add 10 to me using shortcut operator +
-year = 2024
+# year = 2024
 
+# year += 10 
+# print(year)
 
 # Subtract 20 -
 num_one = 55
 
+num_one -=20
+print(num_one)
+
 
 # Subtract 15 -
 num_two = 11
+
+num_two -= 15
+print(num_two)
 
 
 # Multiply by 3 *
