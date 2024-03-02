@@ -277,8 +277,11 @@ username_cleaned = username.strip()
 
 ex_21 = '  sportsfan876  ' # sanitize this string
 
-user_input = input('what is your name ?')
-print(user_input)
+
+# user_input = int(input('what is your favorite name ?')) #getting the input,and casting to integer 
+
+# print(user_input) # casting the string to an integer 
+# print(type(user_input))
 
 
 '''
@@ -293,10 +296,15 @@ True
 '''
 
 # Get input from user
+user_input = input('Good afternoon,please enter your input:  ')
+print(user_input)
 
 # Test input
 
 # Provide output
+username = '4'
+username_input = username.isalnum()
+print(username_input)
 
 
 
