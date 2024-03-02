@@ -297,14 +297,15 @@ True
 
 # Get input from user
 user_input = input('Good afternoon,please enter your input:  ')
-print(user_input)
+
 
 # Test input
+result = user_input.isdigit()
+
 
 # Provide output
-username = '4'
-username_input = username.isalnum()
-print(username_input)
+print('Is your input a number or not?', result)
+
 
 
 
