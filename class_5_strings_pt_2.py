@@ -121,32 +121,48 @@ slice_of_boxer = boxer[7:11]
 
 # Let's step through this string 2 characters at a time
 superheroine = 'Wonder Woman'
-print(superheroine[0:len(superheroine):2])
+# print(superheroine[0:len(superheroine):2])
 
 
 
 # Lets step through this entire word and skip by 4
 word = 'Supercalifragilisticexpialidocious'
-print(word[0:len(word):4])
+# print(word[0:len(word):4])
 
 
 '''Slicing in reverse '''
 
-animal = 'daycare' # Excludes the start character
-# print(animal[::-1]) # Full daycare in reverse
-# print(animal[5:0:-1]) # aycar
-# print(animal[6:0:-1]) # eracya
+# random_word = 'daycare' # Excludes the start character
+# print(random_word[::-1]) # Full daycare in reverse
+# print(random_word[5:0:-1]) # aycar
+# print(random_word[6:0:-1]) # eracya
 
 
 '''
 Write some code to print the second half of a string.
 
-
 Example:
 python
 hon
-
 '''
+new_word = 'python'
+# print(new_word[3:6])
+# new_word2 = 'television'
+# print(new_word2[5:10])
+
+
+# create variable for word 
+language = 'javascript'
+
+#create a variable to get half of the length of the word 
+half = int(len(language) / 2)
+# print(type(half))
+
+#create final bracket notation 
+
+result = language[half:len(language)]
+result = language[int(len(language) / 2) :len(language)]
+# print(result)
 
 
 '''
@@ -164,8 +180,11 @@ Test your code on a few inputs to make sure it works!
 '''
 
 # Get input 
+email = input('Hello,please enter your email address: ')
 
-# Clean input
+# Clean input = Sanitize date 
+email = email.strip()
+print(email)
 
 # Test 1: It has a "." at the third-to-last index
 
