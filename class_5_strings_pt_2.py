@@ -45,20 +45,20 @@ last_position = greeting[len(greeting)-1] # Grabbing the length minus 1 and appl
 # Using the length and bracket notation, access the last letter in the variable below
 month = 'February'
 month_new = month[len(month)-1]
-print(month_new)
+# print(month_new)
 
 # Using bracket notation access the letter x, the letter e, and the letter d 
 first_name = 'Alexandra'
-print(first_name[2])
-print(first_name[3])
-print(first_name[6])
+# print(first_name[2])
+# print(first_name[3])
+# print(first_name[6])
 
-letter_x = first_name[3]
-print(letter_x)
-letter_e = first_name[2]
-print(letter_e)
-letter_d = first_name[6]
-print(letter_d)
+# letter_x = first_name[3]
+# print(letter_x)
+# letter_e = first_name[2]
+# print(letter_e)
+# letter_d = first_name[6]
+# print(letter_d)
 
 
 '''Reverse indexing'''
@@ -75,34 +75,59 @@ fav_animal = 'Ostrich'
 
 # Using bracket notation and reverse indexing, access the letter g, the letter i, the letter p
 fav_season = 'spring'
+# write on my own 
+# theletter_g = (fav_season[-1])
+# print(theletter_g)
+# theletter_i = fav_season[-3]
+# print(theletter_i)
+# theletter_p = fav_season[-5]
+# print(theletter_p)
 
+# write by professor 
+# print(fav_season[-1])
+# print(fav_season[-3])
+# print(fav_season[-5])
 
 
 ''' Slicing '''
 # There are 3 parameters available with indexing with bracket notation [start:stop:step]
 fav_food = 'spaghetti'
+slice_of_fav_food =fav_food[2:7] # exclude the character at stop ,2 through 7
+# print(slice_of_fav_food)
 
 
 # Using slicing please create a string that accesses 'rica' in 'America'
 
 country = 'America'
-
+slice_of_country = country[3:7]
+# print(slice_of_country)
 
 # Using slicing please create a string that accesses 'ora' in 'Dora the explorer'
 cartoon = 'Dora the explorer'
-
+slice_of_cartoon = cartoon[1:4]
+# print(slice_of_cartoon)
 
 # Using slicing please create a string that accesses 'explo' in 'Dora the explorer'
+slice_of_cartoon = cartoon[9:14]
+# print(slice_of_cartoon)
 
 
 # Using slicing please create a string that accesses 'albo' in 'Rocky Balboa'
 boxer = 'Rocky Balboa'
+slice_of_boxer = boxer[7:11]
+# print(slice_of_boxer)
+# print(boxer[7:11])
+
 
 # Let's step through this string 2 characters at a time
 superheroine = 'Wonder Woman'
+print(superheroine[0:len(superheroine):2])
+
+
 
 # Lets step through this entire word and skip by 4
 word = 'Supercalifragilisticexpialidocious'
+print(word[0:len(word):4])
 
 
 '''Slicing in reverse '''
