@@ -184,9 +184,13 @@ email = input('Hello,please enter your email address: ')
 
 # Clean input = Sanitize date 
 email = email.strip()
-print(email)
+
 
 # Test 1: It has a "." at the third-to-last index
+email = 'jie6406581@gmail.com'
+test_1 = (email[-4] == '.')
+print(test_1)
+print('Test 1: Dose the email have a "." at the third-to-last index?',test_1)
 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
 
