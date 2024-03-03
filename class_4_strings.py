@@ -296,15 +296,16 @@ True
 '''
 
 # Get input from user
-user_input = input('Good afternoon,please enter your input:  ')
-
+# user_input = input('Good afternoon,please enter your input:  ')
 
 # Test input
-result = user_input.isdigit()
-
+# result = user_input.isdigit()
 
 # Provide output
-print('Is your input a number or not?', result)
+# print('Is your input a number or not?', result)
+# print(f'Is {user_input} a number or not?',result)
+ 
+
 
 
 
@@ -323,12 +324,24 @@ True
 '''
 
 # Get user input
+use_word_input = input('please enter your word:  ')
+use_number_input = int(input('please enter your number:  '))
+
+# print(use_word_input)
+# print(use_number_input)
 
 # Convert where needed
+length_of_word = len(use_word_input) #length of our word input
+
+# print(length_of_word)
+# print(type(use_number_input))
 
 # Comparison
 
+result = (length_of_word > use_number_input)
+
 # Output
+print ( f'Is {use_word_input} longer than {use_number_input}?',result)
 
 
 '''
@@ -343,6 +356,8 @@ User input: Computer
 3
 
 '''
+
+
 
 
 
