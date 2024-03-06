@@ -206,8 +206,8 @@ ex_13 = 'TEMPLE' # check if uppercase
 
 test_13 = '    '
 test_14 = 'j      b    c'
-# print(test_13.isspace())
-# print(test_14.isspace())
+print(test_13.isspace())
+print(test_14.isspace())
 
 
 ex_14 = '   ' # check if whitespace

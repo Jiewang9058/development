@@ -189,16 +189,35 @@ email = email.strip()
 # Test 1: It has a "." at the third-to-last index
 email = 'jie6406581@gmail.com'
 test_1 = (email[-4] == '.')
-print(test_1)
-print('Test 1: Dose the email have a "." at the third-to-last index?',test_1)
+# print('Test 1: Dose the email have a "." at the third-to-last index?',test_1)
 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
+email = 'jie6406581@.com'
+test_2 = (email[-5] == '@')
+# print('Test 2: Dose the email have exactly one "@" symbol ,at the fifth-to-last index or earlier?' ,test_2)
+
 
 # Test 3: There is at least one character before the "@" symbol
 
+email = 'danawang@qq.com'
+test_3 = email.find('@') > 0
+# print(test_3)
+# 'Test 3: Is there at least one character before the "@" symbol?',
+# print('Test 3:is there at least one character before the "@" symbol ?',test_3)
+
+
 # Test 4: It doesn’t have any spaces (doesn’t contain " ")
+email = 'jie6406581@gmail.com'
+test_4 = (" " not in email)
+# print(test_4)
+# print("test_4 : It doesn't have any space (doesn't contain "  ")" , test_4)
+
+
 
 #Final Test with and Keyword
+
+validmail = test_1 and test_2 and test_3 and test_4
+print(validmail)
 
 
 # End Parameter
