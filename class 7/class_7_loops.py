@@ -4,15 +4,33 @@
 
 ''' While my start value is less than my end value, we will increment by 1'''
 
+# end = int(input("Please enter your number:  "))
+# start = 0
+
+# while start < end:
+#  print(start)
+#  start += 1 
+
 
 
 ''' While my start value is less than my end value, we will decrement by one - You can stop the infinite loop by hitting ctrl + c'''
+# end = 20 
+# start = 0
 
+# while start < end :
+#     print(start)
+#     start -= 1
 
 
 ''' Example Create a while loop that prints every integer from 1 to 10.'''
 
+# start = 1 #initialization 
+# end = 11
 
+
+# while start < end: # condition
+#     print(start)
+#     start += 1
 
 '''
 While Loops and User Input
@@ -22,7 +40,18 @@ This allows you to take user input multiple times without writing multiple lines
 
 Lets look at code that will run infinitely until the user tells it to "stop"
 '''
+# Initialize our string
+# userin = ''
 
+# while userin != 'stop':
+#      userin = input("Please enter a word, or 'stop' to end the loop ")
+#      print(userin)
+
+# Assign multiple variables on one line.
+username, password, day_of_week, = 'hello','how','are you '
+print(username)
+print(password)
+print(day_of_week)
 
 '''
 Exercise
