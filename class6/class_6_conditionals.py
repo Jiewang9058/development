@@ -39,10 +39,12 @@ This is odd
 
 '''Exercise Solution'''
 
-user_input = int(input('Please enter your number: '))
+# user_input = int(input('Please enter your number: '))
 
-if user_input % 2 != 0 :
-    print("this is odd ")
+# if user_input % 2 != 0 :
+#     print("this is odd ")
+# elif user_input % 2 == 0 :
+#     print('this is even')
 
 ''' Else If (Elif) Statements '''
 '''
@@ -55,6 +57,45 @@ D - Between 65 and 69
 F - Anything under 65
 '''
 
+# Get grade from user 
+# score = int(input('Please enter your grade'))
+
+#Create our conditional 
+# Option 1 
+# if score >= 90 and score <= 100:
+#     print("Grade A")
+# elif score >= 80 and score <=90:
+#     print("Grade B")
+# elif score >=70 and score <=80:
+#     print("Grade C")
+# elif score >=65 and score <=70:
+#     print("Grade D")
+# else:
+#     print("Grade F")
+
+# Option 2 
+    # if 90 <= score <= 100:
+    #     print("Grade A")
+    # elif 80 <= score < 90:
+    #     print("Grade B")
+    # elif 70 <= score < 80:
+    #     print("Grade C ")
+    # elif 65 <= score < 70 :
+    #     print("Grade D")
+    # else :
+    #     print("Grade F")
+
+        # Option 3
+    # if  score >= 90:
+    #     print("Grade A")
+    # elif score >= 80:
+    #     print("Grade B")
+    # elif score >= 70:
+    #     print("Grade C ")
+    # elif score >= 65 :
+    #     print("Grade D")
+    # else :
+    #     print("Grade F")
 
 
 
@@ -72,6 +113,20 @@ User input: 12
 This is even
 
 '''
+# with an elif
+# user_input = int(input("please enter your number :"))
+# if user_input % 2 !=0 :
+#      print("this is odd")
+# elif user_input % 2 ==0:
+#     print("this is even ")
+
+#     # With an else 
+
+# if user_input % 2 !=0 :
+#      print("this is odd")
+# else: 
+#     print("this is even ")
+
 
 ''' Exercise solution with an elif and else'''
 
@@ -94,15 +149,32 @@ This is even
 
 User input: 9.2
 Unknown
-
-
 '''
 
 ''' Exercise solution(s)'''
 
+# Check for a  decimal 
+
+# user_input = int(input("please enter your number :"))
 
 
+# if user_input % 2 !=0 :
+#      print("this is odd")
+# elif user_input % 2 ==0:
+#     print("this is even ")
 
+# else:
+#     print("this is Unknow ")
+
+# user_input = int(input("Please enter your number:"))
+
+# if user_input % 2 !=0:
+#     print("This is odd")
+# else:
+#     print("This is even")
+
+# except:
+# print("Unknown")
 
 
 
@@ -124,6 +196,15 @@ This is something else
 
 '''
 
+# user_input = (input('Please enter your answer: '))
+
+# if user_input.isdigit():  
+#     print('this is a number')
+
+# elif user_input.isalpha():
+#     print('this is a word')
+# else:
+#     print('This is something else')
 
 
 
@@ -183,7 +264,31 @@ If they match, print “Login successful.” If they don't, print “Incorrect u
 '''
 ''' Exercise solution '''
 
+# username = input("Please enter your username:  ")
+# if username.capitalize():
+#      print("Login successful.")
+# elif username.alphanumeric() : 
+#       print("Login successful.")
+# elif username.strip[:10]:
+#      print("Login successful.")
 
+# else:
+#       print("Incorrect username. ")
+
+
+# print("Incorrect username")
+
+userpassword = input("Please enter your password:  ")
+if userpassword.alphanumeric()>10 :
+     print("Login successful")
+else :
+     print("Incorrect password")
+
+# Password must be at least 6 characters in length
+
+
+# They must be at least five characters long and start with one uppercase letter 
+# Only letters and numbers can be used; no special characters, spaces nor symbols
 
 # Prompt the user to enter their username and password using the input() function.
 
