@@ -48,10 +48,10 @@ Lets look at code that will run infinitely until the user tells it to "stop"
 #      print(userin)
 
 # Assign multiple variables on one line.
-username, password, day_of_week, = 'hello','how','are you '
-print(username)
-print(password)
-print(day_of_week)
+# jjj
+# print(username)
+# print(password)
+# print(day_of_week)
 
 '''
 Exercise
@@ -67,58 +67,82 @@ If they match, print “Login successful” and end the program.
 '''
 
 # Set sys id and pass
+# sys_id = 'admin'
+# sys_password = 'password'
 
 
-# Prompt User
+# # Prompt User
+# user_id = input('Please enter your username:  ')
+# user_password = input('Please enter your password:  ')
+# # Our initial check, while not equal we will enter loop
+# while sys_id != user_id and sys_password != user_password:
+#     # we have entered the loop , this means the username/password idi not match 
+#     print("Incorrect username or password ")
+#     user_id = input('Please enter your username:  ')
+#     user_password = input('Please enter your password:  ')
 
-
-# Our initial check, while not equal we will enter loop
-
-
+# print("Login Successful") # Outside of the while loop 
 
 ''' For Loops '''
 
 # STRING
-my_string = 'Supercalifragilisticexpialidocious'
-
+# my_string = 'Supercalifragilisticexpialidocious'
+# for S in my_string:
+#     print(S)
 
 # LIST
-my_list = ['dog', 'cat', 'bird', 'giraffe', 'fox', 'elephant', 'mouse', 'zebra']
-
+# my_list = ['dog', 'cat', 'bird', 'giraffe', 'fox', 'elephant', 'mouse', 'zebra']
+# for animal in my_list:
+#     print(animal)
 
 # TUPLE
-my_tuple = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
-
+# my_tuple = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
+# for months in my_tuple:
+#     print(months)
 
 
 # DICTIONARY
-my_dictionary = {"First name": "Jill",
-                 "Last name": "Simmons",
-                 "Age": 34,
-                 "Address":"1515 Mockingbird Lane"}
+# my_dictionary = {"First name": "Jill",
+#                  "Last name": "Simmons",
+#                  "Age": 34,
+#                  "Address":"1515 Mockingbird Lane"}
 
+# for keys 
+# for k in my_dictionary.keys():
+#     print(k)
 
+# for values 
+# for v in my_dictionary.values():
+#         print(v)
 
+# for both (items)
+# for k, v in my_dictionary.items():
+#                 print(k,v)
 
 # SET
 my_set = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
 
-
+# for days in my_set:
+#     print(days )
 
 # RANGE
 
-
+# for x in range(10,25):
+#     print(x)
 
 '''
 Write a for loop that loops through a string, counts all the letters, and then print how long the string is.
 '''
+# my_string = 'Supercalifragilisticexpialidocious'
+# total = 0 # initialize for final count 
 
+# for m in my_string:
+#     total += 1
 
+# print(f'There are {total} letters in your word ,{my_string}.')
 
 ''' Exercise
 
-Take a string from the user. Verify that it's a number.
-Write a for loop that adds all the digits together. Then print the total.
 
 Example:
 '14253'
@@ -126,8 +150,15 @@ Example:
 
 Hint: remember to cast to int() for each digit in the loop
 '''
+# sum = 0 # initialize our variable
+# user_input = input('Please enter your number')
 
+# for t in user_input:
+#     if user_input.isdecimal():# once we confirm it is a number
+#         t = int(t) # this has to be cast to an integer to be added to sum
+#         sum += t # every time through, we will add that value to sum
 
+# print(f'You total is {sum}')
 
 
 ''' Exercise 
@@ -145,7 +176,41 @@ o is a vowel
 '''
 
 
+# consonant_word = "h","l"  原版:自己做的 
+# vowel_word = "e","o"
 
+# user_input = input ('Please input your word:  ')
+
+# for work in user_input:
+#     if consonant_word in user_input :
+#         print("the letter is a  vowel ", )
+#     else:
+#         print('this letter is vowel ')
+
+
+# chatgpt 修改版
+# user_input = input('Please enter your word:   ')
+# for letter in  user_input:
+#      if letter.lower() in 'aeiou':
+#          print( letter ,'is a vowel' )
+#      else:
+#          print(letter,"is a consanant")   
+
+#老师版
+# word = "hello"
+# vowels =  ['a', 'e', 'i', 'o','u']
+# for w in word :
+#     if w in vowels :
+#         print(f'{w} is a vowel')
+#     else:
+#         print(f'{w} is a consonat')
+
+# word = "hello"
+# for w in word :
+#     if w in 'aeiou' :
+#         print(f'{w} is a vowel')
+#     else:
+#         print(f'{w} is a consonat')
 
 ''' Exercise 
 You're working on a data analysis project for a company that looks at written text. You're only interested in letters from A-Z because you're analyzing language. However, the data you're given has some values that shouldn't be there.
@@ -153,11 +218,23 @@ Write a Python program that takes a string as input from the user, removes anyth
 You can loop through the string in a for loop, use the .isalpha() string method, and remember that strings are immutable, so you will have to build a new string from scratch using string concatenation.
 '''
 
+user_input = ('Please enter your word:  ')
 
+for userletters in user_input :
+    if user_input.isalpha() in "a-z":
+        print(f'{user_input} is a letter ')    
+    else:
+        print(f'{userletters} is not a letter ')
 
+# 老师版
+result = '' # this will capture our alphabet
+user_input = input ("Please enter your data:  ")
 
-
-
+for u in user_input:
+    if u.isalpha(): # if the letter in the string is in the alphabet
+         result += u # this will apend that character to our new string
+    else:
+        print(f'sorry{u} is not a letter ')     
 
 
 

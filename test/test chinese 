@@ -1,0 +1,92 @@
+# num = 0
+# sum_all = 0 
+# while num <= 100:
+#     sum_all = sum_all + num 
+#     num += 2
+
+#     print("1-100 all sum_all :  ", sum_all)
+
+
+# while True:
+#     a = input ("Please enter a word(enter Q/q means end):  ")
+#     if a == "Q" or a == "q" :
+#         print ("end loop ,exit")
+#         break 
+#     else :
+#         print(a)
+
+'''Website Sign-up 
+Inform the user of these requirements.The username must:
+Follow all the Python conventions for a variable name. 
+It must start with a lowercase letter and only contain letters, numbers, and underscores.
+Not be in a list of taken usernames. This list will be given to you.
+Taken usernames = admin, admin123, superuser, superuser123
+If the username doesnt meet these requirements, print either “Invalid username” or “Username taken” based on the context,
+ and continue looping.
+
+'''
+
+ #  if  valid_username.lower():
+    #       print("valid_username")
+    #       break
+
+    #  elif  valid_username.alphanumeric():
+    #        print("valid_username")
+    #        break
+
+    #  elif   "__" in  "valid_username":
+    #        print("valida_username") 
+    #        break
+
+
+
+'''Website Sign-up 
+Inform the user of these requirements.The username must:
+Follow all the Python conventions for a variable name. 
+It must start with a lowercase letter and only contain letters, numbers, and underscores.
+Not be in a list of taken usernames. This list will be given to you.
+Taken usernames = admin, admin123, superuser, superuser123
+If the username doesnt meet these requirements, print either “Invalid username” or “Username taken” based on the context,
+ and continue looping.
+
+'''    
+
+
+
+Taken_usernames = ['admin','admin123','superuser','superuser123']
+
+while True:
+    valid_username = input ("Please enter your username: ")
+
+    if not valid_username[0].islower():
+        print("Invalid username:Username must start with a lowercare letter. ")
+        continue
+
+    if not valid_username.isalnum():
+        print("Invalid username:Username must contain only letters,numbers,and underscores. ")
+        continue
+
+    if not valid_username.isalpha():
+        print("Invalid username:Username must contain only letters,numbers,and underscores. ")
+        continue
+
+    elif valid_username in Taken_usernames:
+        print("Username taken,Please choose another one.")
+
+    else:
+        print("Username is valid")
+        break
+    
+'''
+
+Password Requirements
+Inform the user of these requirements. The password must be:
+At least 8 characters long
+Contains at least one uppercase letter
+Contains at least one lowercase letter
+Contains at least one digit
+Contains at least one of these characters: !, ?, @, #, $, ^, &, *, _, -
+Doesnt contain any spaces
+If the password doesnt meet the requirements, print the message “Invalid password” and continue looping.
+
+'''

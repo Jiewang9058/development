@@ -82,10 +82,10 @@ word = 'cat'
 # testing for our palindrome
 reversed_word = word[: : -1]
 
-if word == reversed_word :
-    print('Congrats you have a palindrome')
-else:
-    print('Sorry,not a palindrome.')
+# if word == reversed_word :
+#     print('Congrats you have a palindrome')
+# else:
+#     print('Sorry,not a palindrome.')
 
 
 

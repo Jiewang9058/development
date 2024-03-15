@@ -45,7 +45,7 @@ last_position = greeting[len(greeting)-1] # Grabbing the length minus 1 and appl
 # Using the length and bracket notation, access the last letter in the variable below
 month = 'February'
 month_new = month[len(month)-1]
-print(month_new)
+# print(month_new)
 
 # Using bracket notation access the letter x, the letter e, and the letter d 
 first_name = 'Alexandra'

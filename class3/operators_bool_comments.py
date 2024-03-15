@@ -166,7 +166,8 @@ val_four %= 5
 
 # Is 7 less than 5? <
 # print( 7 < 5 )
-# result = ( 7 < 5 )
+result = ( 7 < 5 )
+result
 # print (result)
 
 
@@ -242,3 +243,4 @@ print(eval(is_open))
 print(eval(weekday))
 
 
+result 
