@@ -1,42 +1,3 @@
-# num = 0
-# sum_all = 0 
-# while num <= 100:
-#     sum_all = sum_all + num 
-#     num += 2
-
-#     print("1-100 all sum_all :  ", sum_all)
-
-
-# while True:
-#     a = input ("Please enter a word(enter Q/q means end):  ")
-#     if a == "Q" or a == "q" :
-#         print ("end loop ,exit")
-#         break 
-#     else :
-#         print(a)
-
-'''Website Sign-up 
-Inform the user of these requirements.The username must:
-Follow all the Python conventions for a variable name. 
-It must start with a lowercase letter and only contain letters, numbers, and underscores.
-Not be in a list of taken usernames. This list will be given to you.
-Taken usernames = admin, admin123, superuser, superuser123
-If the username doesnt meet these requirements, print either “Invalid username” or “Username taken” based on the context,
- and continue looping.
-
-'''
-
- #  if  valid_username.lower():
-    #       print("valid_username")
-    #       break
-
-    #  elif  valid_username.alphanumeric():
-    #        print("valid_username")
-    #        break
-
-    #  elif   "__" in  "valid_username":
-    #        print("valida_username") 
-    #        break
 
 
 
@@ -76,7 +37,7 @@ while True:
     else:
         print("Username is valid")
         break
-    
+
 '''
 
 Password Requirements
@@ -90,3 +51,18 @@ Doesnt contain any spaces
 If the password doesnt meet the requirements, print the message “Invalid password” and continue looping.
 
 '''
+special_characters = "!","?","@","#","$","^","&","*","_","-"
+space_pa = "  "
+
+while True:
+   valid_password = input("Please enter your password: ")
+   if valid_password.isupper() and valid_password.islower() and valid_password.isdigit() :
+      continue
+   elif special_characters in valid_password :
+       continue
+   elif not space_pa in valid_password:
+       continue
+   else :
+       print("Invalid password")
+       continue
+    
