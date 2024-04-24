@@ -255,20 +255,20 @@ Output: {'Dominic', 'Simone'}
 '''
 
 # Solve with an intersection - solve with 1 or 2 lines of code
-over_60_years = {'Dominic', 'Linda', 'Simone', 'Swathi', 'Olaf'}
-over_5_purchases = {'Finn', 'Simone', 'Aaron', 'Dominic'}
+# over_60_years = {'Dominic', 'Linda', 'Simone', 'Swathi', 'Olaf'}
+# # over_5_purchases = {'Finn', 'Simone', 'Aaron', 'Dominic'}
 
-result = over_60_years.intersection(over_5_purchases)
-print(result)
+# # result = over_60_years.intersection(over_5_purchases)
+# # print(result)
 
-#or
+# # #or
 
-discounts = [] # to show who get our discount from our looping 
+# # discounts = [] # to show who get our discount from our looping 
 
-for o in over_60_years:
-    if o in over_5_purchases:
-        discounts.append(o)
-print(discounts)
+# # for o in over_60_years:
+# #     if o in over_5_purchases:
+# #         discounts.append(o)
+# # print(discounts)
 
 '''
 Exercise - Sets
@@ -292,9 +292,82 @@ The set of employees that know Python or JavaScript, but not both
 # # print statement, formatted strings, to display the set results 
 
 
+# initialize our variable 
+
+# Data collection sets 
+python_devs, js_devs = set(), set()
+
+# user input 
+dev_type_input, dev_name_input = '', ''
+
+# Error messages 
+error_msgs = ('Invalid Input, please try again.','Thank you,Have a nice day')
+
+# instructions 
+print(''' 
+Python and JS Developer Tracker 
+Instructions input 's or 'stop' at anytime to exit program
+To add a Python developer type 'p' when prompted 
+To add a JavaScript developer type 'js' when prompted .''')
 
 
 
+
+# while loop 
+while True:
+
+    # input
+    dev_type_input = input("Type 'p' for PYTHON Developer, 'JS' for JavaScript developer, or 'STOP' to exit program:  " ).lower()
+    #  if statements ,break keyword , continue,
+    # This gives the user an exit
+    if dev_type_input == 'stop':
+        print(error_msgs[1])
+        break 
+
+    # Get a dev type, add to our sets, and offer an exit 
+    if dev_type_input == 'p' or dev_type_input == 'js':
+         dev_name_input = input("enter developer name:  ").lower()
+
+         if dev_name_input == 'stop':
+            print(error_msgs[1])
+            break
+         elif dev_type_input == 'p':
+            python_devs.add(dev_name_input.title())
+         else:
+             js_devs.add(dev_name_input.title())
+    else:
+        print(error_msgs[0])
+        continue
+
+    # set operations
+    both_languages = python_devs.intersection(js_devs) # everybody who knows both
+    know_js_not_python = js_devs.difference(python_devs) # know js not python - difference
+    know_python_or_js_but_not_both = js_devs.symmetric_difference(python_devs) # who knows python or js but not both
+
+    print(both_languages,know_js_not_python,know_python_or_js_but_not_both)
+    
+
+    # If sets are empty, display no data for user 
+    if both_languages == set():
+        both_languages = 'No Data'
+
+    if know_js_not_python == set():
+       know_js_not_python = 'No Data'
+
+    if know_python_or_js_but_not_both == set():
+        know_python_or_js_but_not_both = 'No Data'
+
+
+    print('RESULTS')
+    print('--------------------------------------')
+    print(f'The following developers know both languages: {both_languages}')
+    print(f'The following developers know JavaScript but not PYTHON: {know_js_not_python}')
+    print(f'The following developers know PYTHON or JavaScript but not both: {know_python_or_js_but_not_both}')
+    print('--------------------------------------')
+
+
+
+ 
 
 
 
