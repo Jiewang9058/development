@@ -111,8 +111,8 @@ title_check = test_string.title()
 # print(title_check)
 
 # Put all list items in a string -join
-my_list = ['jean', 'sarah', 'larry']
-my_string = '*'.join(my_list)
+# my_list = ['jean', 'sarah', 'larry']
+# my_string = '*'.join(my_list)
 # print(my_string)
 
 # Replace J with B
@@ -121,12 +121,12 @@ test_name_1 = test_name.replace('j','b')
 # print(test_name_1)
 
 # # split this string and place each word in a list
-# string = 'I would like to split up this string'
-# result = string.split()
+string = 'I would like to split up this string'
+result = string.split()
 # print(result)
 
 # # Check if this string starts with a letter w
-# str = 'zootopia'
+str = 'zootopia'
 # result = str.startswith('w')
 # print(result)
 
@@ -164,21 +164,26 @@ end1 = 25
 start = 100
 end = 50 
 
-# while start >= end :
-#      print(start)
-#      start -= 1
-#      if start == 75 :
-#           print(f'The value of start is {start}')
-#           break
+# while start >= end:
+#     print(start)
+#     start -= 1
+#     if start == 75:
+#         print(f"The value of the start {start}")
+#         break
 
 
 # Write a for loop that will loop through the string below and copy/move these letters to the new empty string'''
 
+''''''
 str_1 = 'Have a happy birthday'
 str_2 = ''
 
 
 # for s in str_1 :
+#     str_2 += s
+# print(str_2)
+
+# for s in str_1:
 #     str_2 += s
 # print(str_2)
 
@@ -201,6 +206,9 @@ num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 vowels = 'aeiou'
 my_string = 'abracadabra'
 
+
+
+
 # for m in my_string:
 #     if m in vowels:
 #         print(f'{m} is vowels')
@@ -210,6 +218,10 @@ my_string = 'abracadabra'
 
 
 # In a while loop, ask the user for their favorite animal. If the word is equal to giraffe, we will tell the user congratulations and end the loop. Otherwise we will keep prompting the user.
+
+
+
+
 
 # while True:
 #     fav_animal = input('what is your favorite animal? ')
@@ -225,6 +237,18 @@ my_string = 'abracadabra'
 
 
 # In a while loop, ask the user for a word in all lowercase. If the string is not all lowercase, reprompt the user until the condition is met
+
+# while True: self_version
+#     user_word = input("Please enter your word")
+#     if user_word.lowercase():
+#         print(f"Congradulation")
+#         break
+#     else:
+#         continue
+
+
+
+
 # while True:
 #     lower_case = input('What is your lowercase word ')
 
@@ -243,11 +267,11 @@ my_string = 'abracadabra'
 
 test_word = '1helloH'
 
-# first_char = test_word[0]
-# print(first_char)
+first_char = test_word[0]
+print(first_char)
 
-# last_char = test_word[len(test_word) - 1]
-# print(last_char)
+last_char = test_word[len(test_word) - 1]
+print(last_char)
 
 # while loop 
 # Conditional 
