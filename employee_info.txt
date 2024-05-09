@@ -1,0 +1,5 @@
+Bob is a manager in the Sales Department,joined in 2012 and a salary of 100000
+Alice is a developer in the Technical Department,joined in 2016 and a salary of 90000
+David is a developer in the Technical Department,joined in 2021 and a salary of 70000
+Joe is a consultant in the Accounting Department,,joined in 2019 and a salary of 50000
+Susan is a sales in the Sales Department,joined in 2018 and a salary of 60000

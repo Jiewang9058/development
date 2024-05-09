@@ -1,0 +1,46 @@
+from datetime import datetime
+import datetime
+
+
+class Employeedate:
+
+    def __init__(self,name,job_tittle,department,salary,hire_year):
+        self.name = name
+        self.job_tittle = job_tittle
+        self.department = department
+        self.salary = salary
+        self.hire_year = hire_year
+
+# return a string representation 
+    def __str__(self):
+        return f'{self.name} is a {self.job_tittle} in the {self.department},joined in {self.hire_year} and a salary of {self.salary}' 
+    
+# return the total years employees have worked 
+    def years_worked(self):
+        today = datetime.datetime.now().year
+        return f'{self.name} has worked here {today - int(self.hire_year)} years .'
+    
+# calculate the total salary expense 
+    def total_expense(self):
+        total_expense = int(self.salary) * datetime.datetime.now().year - int(self.hire_year)
+        return f'The total salary expense for this employee is {total_expense}'
+
+employee1 = Employeedate('Bob','manager','Sales Department','100000','2012')
+employee2 = Employeedate('Alice','developer','Technical Department','90000','2016')
+employee3 = Employeedate('David','developer','Technical Department','70000','2021')
+employee4 = Employeedate('Joe','consultant','Accounting Department,', '50000','2019')
+employee5 = Employeedate('Susan', 'sales', 'Sales Department', '60000', '2018')
+    
+print(employee1)
+print(employee2)
+print(employee3)
+print(employee4)
+print(employee5)
+
+print(employee1.total_expense())
+print(employee2.total_expense())
+
+print(employee1.years_worked())
+
+
+
