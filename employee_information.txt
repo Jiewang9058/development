@@ -1,0 +1,6 @@
+Employee Name: Bob
+Job Tittle: Manager
+Department: Sales Department
+Salary: 100000
+Hire Year:  2012
+Total Work Years: Bob has worked here 12 years .

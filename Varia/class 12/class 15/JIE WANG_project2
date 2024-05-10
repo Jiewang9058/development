@@ -1,46 +1,54 @@
 from datetime import datetime
-import datetime
-
 
 class Employeedate:
 
-    def __init__(self,name,job_tittle,department,salary,hire_year):
+    def __init__(self,name: str,job_tittle:str,department:str,salary:float,hire_year:int):
         self.name = name
         self.job_tittle = job_tittle
         self.department = department
         self.salary = salary
         self.hire_year = hire_year
 
+
+# see the fuctione from Point 2d class Add accessor and number
 # return a string representation 
     def __str__(self):
-        return f'{self.name} is a {self.job_tittle} in the {self.department},joined in {self.hire_year} and a salary of {self.salary}' 
+        return f'''Employee Name: {self.name}\nJob Tittle: {self.job_tittle}\nDepartment: {self.department}\nSalary: {self.salary}\nHire Year:  {self.hire_year}''' 
     
-# return the total years employees have worked 
-    def years_worked(self):
-        today = datetime.datetime.now().year
+
+# # return the total years employees have worked 
+    def total_employee_work_year(self):
+        today = datetime.now().year
         return f'{self.name} has worked here {today - int(self.hire_year)} years .'
+
     
 # calculate the total salary expense 
-    def total_expense(self):
-        total_expense = int(self.salary) * datetime.datetime.now().year - int(self.hire_year)
-        return f'The total salary expense for this employee is {total_expense}'
+    # def total_expense(self):
+    #     total_expense = int(self.salary) * datetime.datetime.now().year - int(self.hire_year)
+    #     return f'The total salary expense for this employee is {total_expense}'
 
-employee1 = Employeedate('Bob','manager','Sales Department','100000','2012')
-employee2 = Employeedate('Alice','developer','Technical Department','90000','2016')
-employee3 = Employeedate('David','developer','Technical Department','70000','2021')
-employee4 = Employeedate('Joe','consultant','Accounting Department,', '50000','2019')
-employee5 = Employeedate('Susan', 'sales', 'Sales Department', '60000', '2018')
+#  Write the employee information to a text file
+    def print_employee_information(self):
+        f = open('employee_information.txt','w')
+        f.write(f'''Employee Name: {self.name}\nJob Tittle: {self.job_tittle}\nDepartment: {self.department}\nSalary: {self.salary}\nHire Year:  {self.hire_year}\nTotal Work Years: {self.total_employee_work_year()}''')
+        f.close()
+
+
+
+employee1 = Employeedate('Bob','Manager','Sales Department','100000','2012')
+employee2 = Employeedate('David','Developer','Technical Department','70000','2021')
+# employee3 = Employeedate('Joe','Consultant','Accounting Department,', '50000','2019')
+# employee4 = Employeedate('Susan', 'Sales', 'Sales Department', '60000', '2018')
     
 print(employee1)
-print(employee2)
-print(employee3)
-print(employee4)
-print(employee5)
+print(employee1.total_employee_work_year())
 
-print(employee1.total_expense())
-print(employee2.total_expense())
+employee1.print_employee_information()
+# print(employee2)
+# print(employee2.total_employee_work_year())
 
-print(employee1.years_worked())
+# print(employee1.total_expense())
+# print(employee2.total_expense())
 
 
 
