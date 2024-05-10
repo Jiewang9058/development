@@ -22,10 +22,17 @@ class Employeedate:
         return f'{self.name} has worked here {today - int(self.hire_year)} years .'
 
     
+
 # calculate the total salary expense 
     # def total_expense(self):
     #     total_expense = int(self.salary) * datetime.datetime.now().year - int(self.hire_year)
     #     return f'The total salary expense for this employee is {total_expense}'
+
+
+    def total_expense(self):
+        total_expense = int(self.salary) * (datetime.now().year - int(self.hire_year))
+        return f'The total salary expense for this employee is {total_expense}'
+
 
 #  Write the employee information to a text file
     def print_employee_information(self):
@@ -35,20 +42,21 @@ class Employeedate:
 
 
 
-employee1 = Employeedate('Bob','Manager','Sales Department','100000','2012')
-employee2 = Employeedate('David','Developer','Technical Department','70000','2021')
-# employee3 = Employeedate('Joe','Consultant','Accounting Department,', '50000','2019')
-# employee4 = Employeedate('Susan', 'Sales', 'Sales Department', '60000', '2018')
+employee1 = Employeedate('Bob','Manager','Sales Department','106700','2012')
+employee2 = Employeedate('David','Developer','Technical Department','70500','2021')
+employee3 = Employeedate('Joe','Consultant','Accounting Department,', '50980','2019')
+employee4 = Employeedate('Susan', 'Sales', 'Sales Department', '60000', '2018')
     
 print(employee1)
 print(employee1.total_employee_work_year())
+print(employee1.total_expense())
 
 employee1.print_employee_information()
+
+
+
 # print(employee2)
 # print(employee2.total_employee_work_year())
-
-# print(employee1.total_expense())
-# print(employee2.total_expense())
 
 
 
