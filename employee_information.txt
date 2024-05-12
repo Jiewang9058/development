@@ -1,6 +1,7 @@
 Employee Name: Bob
-Job Tittle: Manager
-Department: Sales Department
-Salary: 106700
-Hire Year:  2012
-Total Work Years: Bob has worked here 12 years .
+Job Title:Manager
+Department:Sales Department
+Sarary:106700.00
+Hire Year:2012
+Total Work Year:Bob has worked here 12 years .
+Total Expense:The total salary expense for this employee is $ 1280400.00
