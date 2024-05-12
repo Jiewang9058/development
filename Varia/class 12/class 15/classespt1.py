@@ -76,12 +76,12 @@ class Point2d:
 
 # # Mutator method
 
-# point7 = Point2d(5,11)  
-# point7.set_x(10) # our method will change the value of x 
-# print(point7)
+point7 = Point2d(5,11)  
+point7.set_x(10) # our method will change the value of x 
+print(point7)
 
-# point7.set_y(25)
-# # print(point7)
+point7.set_y(25)
+# print(point7)
 
 # # Accessor method
 # print(point7.get_x())
