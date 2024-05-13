@@ -10,7 +10,6 @@ class Employeedate:
         self.hire_year = hire_year
 
 
-# see the fuctione from Point 2d class Add accessor and number
 # return a string representation 
     def __str__(self):
         return f'''Employee Name: {self.name}\nJob Tittle: {self.job_title}\nDepartment: {self.department}\nSalary: $ {float(self.salary):.02f}\nHire Year:  {self.hire_year}''' 
@@ -51,7 +50,7 @@ class Employeedate:
     def set_salary(self,other):
         self.salary = other
 
-        # Accessor method 
+        #  Accessor method 
     def get_hire_year(self):
         return self.hire_year
     
@@ -97,13 +96,12 @@ print(employee1)
 
 #print Accessor method 
 print(employee1.get_hire_year())
+
 print(employee1.get_name())
+
 print(employee1.get_dapearment())
 print(employee1.get_job_title())
 print(employee1.get_salary())
 
 # print(employee2)
 # print(employee2.total_employee_work_year())
-
-
-
