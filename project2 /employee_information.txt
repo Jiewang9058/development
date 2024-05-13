@@ -1,7 +1,7 @@
 Employee Name: Bob
 Job Title:Manager
 Department:Sales Department
-Sarary:89900.00
+Sarary:106700.00
 Hire Year:2012
 Total Work Year:Bob has worked here 12 years .
-Total Expense:The total salary expense for this employee is $ 1078800.00
+Total Expense:The total salary expense for this employee is $ 1280400.00
